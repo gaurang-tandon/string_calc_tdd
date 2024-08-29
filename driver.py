@@ -1,9 +1,10 @@
+import re
+
 def add(numbers:str):
-    number_list = numbers.split(',')
+    number_list = re.split(r'[;\n,//]', numbers)
     number_list = [int(x.strip()) for x in number_list if x]
-    print(number_list)
-    print(sum(number_list))
+    return sum(number_list)
     
 
 
-add('1,3,4,6,765,,1,3,4,')
+print(add('//;\n1;2\n,\n34,,,3'))
