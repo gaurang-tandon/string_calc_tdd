@@ -16,3 +16,9 @@ def add(numbers:str):
     
     # IF NO NEGATIVE INTEGERS FOUND THEN RETURNING THE SUM OF ALL INTEGERS IN THE STRING
     return sum(number_list)
+
+
+print(add("1\n2,3"))
+print(add("//;\n1;2"))
+print(add("//\n2,5,7,4,2,1,\n,42,54\n\n23\n\n\n\n\n12,,,,23"))
+print(add("//\n2,5,7,4,2,1,\n,-42,-54\n\n23\n\n\n\n\n-12,,,,-23"))
